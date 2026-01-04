@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Calibri;
-    font-size: 23px;
+    font-size: 23vw;
     color: #270b0b;
 }
 
@@ -18,27 +18,27 @@ body {
 }
 
 .calendar {
-    width: 100%;
+    width: 5000vw;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 10vw;
     background: #2f080894;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10vw;
+    box-shadow: 0 0 10vw rgba(0,0,0,0.3);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10vw;
 }
 
 .monthYear {
     text-align: center;
     font-weight: 600;
-    width: 300px;
+    width: 300vw;
 }
 
 .header button {
@@ -49,9 +49,9 @@ body {
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    width: 40vw;
+    height: 40vw;
+    box-shadow: 0 0 4vw rgba(0,0,0,0.2);
 }
 
 .days {
@@ -62,16 +62,16 @@ body {
 /* Weekdays like Sun, Mon, etc. */
 .day {
     text-align: center;
-    padding: 92px;
+    padding: 92vw;
     color: #ffdddd;
     font-weight: 50;
-    width: 0px;
+    width: 0vw;
 }
 
 .dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 44px;
+    gap: 44vw;
 }
 
 .date {
@@ -79,13 +79,13 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60px;
+    padding: 60vw;
     margin: auto;
     cursor: pointer;
-    font-weight: 700px;
+    font-weight: 700vw;
     border-radius: 50%;
-    width: 5px;
-    height: 40px;
+    width: 5vw;
+    height: 40vw;
     transition: 0.2s;
 }
 
@@ -127,23 +127,23 @@ body {
 
 .hidden {
   display: none;
-  gap: 55px;
+  gap: 55vw;
 }
 
 .modal-content {
   background: white;
-  padding: 50px;
-  border-radius: 50px;
-  width: 400px;
+  padding: 50vw;
+  border-radius: 50vw;
+  width: 400vw;
 }
 
 .event-dot {
-    width: 12px;
-    height: 9px;
+    width: 12vw;
+    height: 9vw;
     background: rgb(201, 0, 0);
     border-radius: 50%;
     position: absolute;
-    bottom: 4px;
+    bottom: 4vw;
     left: 50%;
     transform: translateX(-50%);
 }
