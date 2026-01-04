@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+    font-size: 23px;
+    color: #270b0b;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fddbdb;
+}
+
+.calendar {
+    width: 5000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #2f080894;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.monthYear {
+    text-align: center;
+    font-weight: 600;
+    width: 300px;
+}
+
+.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+/* Weekdays like Sun, Mon, etc. */
+.day {
+    text-align: center;
+    padding: 92px;
+    color: #ffdddd;
+    font-weight: 50;
+    width: 0px;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 44px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 700px;
+    border-radius: 50%;
+    width: 5px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.date {
+    position: relative;
+}
+
+.date:hover{
+    background: #f69b9f;
+    color: #fff;
+}
+
+
+.date.active {
+    background: #541c1d;
+    color: #fff;
+}
+
+.date.inactive {
+    color: #d2d2d2;
+}
+
+.date.inactive:hover {
+    color: #845f5f;
+}
+
+/* add event */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 20;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.549);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+  gap: 55px;
+}
+
+.modal-content {
+  background: white;
+  padding: 50px;
+  border-radius: 50px;
+  width: 400px;
+}
+
+.event-dot {
+    width: 12px;
+    height: 9px;
+    background: rgb(201, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

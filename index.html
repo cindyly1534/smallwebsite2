@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar</title>
+</head>
+
+<body>
+    
+    <div class="calendar">
+        <div class="header">
+            <button id="prevBtn">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="monthYear" id="monthYear"></div>
+            <button id="nextBtn">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="days">
+            <div class="day">Sun</div>
+            <div class="day">Mon</div>
+            <div class="day">Tue</div>
+            <div class="day">Wed</div>
+            <div class="day">Thu</div>
+            <div class="day">Fri</div>
+            <div class="day">Sat</div>
+        </div>
+        <div class="dates" id="dates"></div>
+    </div>
+
+    <!-- add event -->
+    <div id="eventModal" class="hidden modal">
+        <div class="modal-content">
+            <h3 id="eventDateDisplay"></h3>
+            <input type="text" id="eventInput" placeholder="Enter event">
+            <button id="saveEventBtn">Save Event</button>
+            <button id="closeEventBtn">Close</button>
+        </div>
+    </div>
+
+    <div id="viewEventsModal" class="hidden modal">
+    <div class="modal-content">
+        <h3 id="viewEventsDateDisplay"></h3>
+        <ul id="eventsList"></ul>
+        <button id="closeViewEventsBtn">Close</button>
+    </div>
+</div>
+
+<div id="editEventModal" class="hidden modal">
+    <div class="modal-content">
+        <h3>Edit Event</h3>
+        <input id="editEventInput" type="text">
+        <button id="saveEditEventBtn">Save Changes</button>
+        <button id="closeEditEventBtn">Cancel</button>
+    </div>
+</div>
+
+    
+    <script src="main.js"></script>
+    
+    
+
+
+
+</body>
+
+</html>
