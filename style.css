@@ -18,7 +18,7 @@ body {
 }
 
 .calendar {
-    width: 2500vw;
+    width: 500vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -147,5 +147,6 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 
