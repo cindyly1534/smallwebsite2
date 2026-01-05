@@ -10,7 +10,7 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
 }
 
 .calendar {
-    width: 500vw;
+    width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -147,6 +147,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 
 
