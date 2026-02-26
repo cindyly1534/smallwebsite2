@@ -5,12 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Calibri;
-    font-size: 23vw;
+    font-size: 23px;
     color: #270b0b;
 }
 
 body {
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,27 +18,27 @@ body {
 }
 
 .calendar {
-    width: 100vw;
+    width: 5000px;
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 10vw;
+    padding: 10px;
     background: #2f080894;
-    border-radius: 10vw;
-    box-shadow: 0 0 10vw rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10vw;
+    padding: 10px;
 }
 
 .monthYear {
     text-align: center;
     font-weight: 600;
-    width: 300vw;
+    width: 300px;
 }
 
 .header button {
@@ -49,9 +49,9 @@ body {
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
-    width: 40vw;
-    height: 40vw;
-    box-shadow: 0 0 4vw rgba(0,0,0,0.2);
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 }
 
 .days {
@@ -62,16 +62,16 @@ body {
 /* Weekdays like Sun, Mon, etc. */
 .day {
     text-align: center;
-    padding: 92vw;
+    padding: 92px;
     color: #ffdddd;
     font-weight: 50;
-    width: 0vw;
+    width: 0px;
 }
 
 .dates {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 44vw;
+    gap: 44px;
 }
 
 .date {
@@ -79,13 +79,13 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60vw;
+    padding: 60px;
     margin: auto;
     cursor: pointer;
-    font-weight: 700vw;
+    font-weight: 700px;
     border-radius: 50%;
-    width: 5vw;
-    height: 40vw;
+    width: 5px;
+    height: 40px;
     transition: 0.2s;
 }
 
@@ -127,27 +127,24 @@ body {
 
 .hidden {
   display: none;
-  gap: 55vw;
+  gap: 55px;
 }
 
 .modal-content {
   background: white;
-  padding: 50vw;
-  border-radius: 50vw;
-  width: 400vw;
+  padding: 50px;
+  border-radius: 50px;
+  width: 400px;
 }
 
 .event-dot {
-    width: 12vw;
-    height: 9vw;
+    width: 12px;
+    height: 9px;
     background: rgb(201, 0, 0);
     border-radius: 50%;
     position: absolute;
-    bottom: 4vw;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-
 
