@@ -11,7 +11,7 @@
 
 body {
     min-height: 100%;
-    display: 100%;
+    display: 200%;
     align-items: center;
     justify-content: center;
     background: #fddbdb;
@@ -147,6 +147,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 
 
