@@ -11,7 +11,7 @@
 
 body {
     min-height: 100%;
-    display: 200%;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #fddbdb;
@@ -38,7 +38,7 @@ body {
 .monthYear {
     text-align: center;
     font-weight: 600;
-    width: 100%;
+    width: 200%;
 }
 
 .header button {
@@ -147,6 +147,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 
 
